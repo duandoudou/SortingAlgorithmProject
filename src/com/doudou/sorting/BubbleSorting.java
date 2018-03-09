@@ -1,5 +1,7 @@
 package com.doudou.sorting;
 
+import com.doudou.util.SortingPrintUtil;
+
 /**
  * Created by IntelliJ IDEA.
  * VisuAlgoProject
@@ -28,12 +30,20 @@ public class BubbleSorting {
         //获取长度
         int length = numbers.length;
         for (int i = 0; i < length - 1; i++) {
+            //交换标志
+            boolean swapped = false;
             for (int j = 0; j < length - 1 - i; j++) {
                 if (numbers[j] > numbers[j + 1]) {
                     int temp = numbers[j];
                     numbers[j] = numbers[j + 1];
                     numbers[j + 1] = temp;
+                    swapped = true;
                 }
+            }
+            SortingPrintUtil.print(numbers, i + 1);
+            //如果没有交换，说明排序完成
+            if(!swapped){
+                break;
             }
         }
     }
