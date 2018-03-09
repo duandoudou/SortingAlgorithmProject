@@ -1,6 +1,7 @@
 package com.doudou.test;
 
 import com.doudou.sorting.*;
+import com.doudou.util.SortingPrintUtil;
 
 /**
  * Created by IntelliJ IDEA.
@@ -15,10 +16,9 @@ public class Test {
     public static void main(String... args) {
         int[] sortTempNums = new int[]{36, 44, 2, 17, 24, 30, 31, 44, 21, 22, 31, 37, 45, 2, 37, 11, 13, 12, 47};
 
+        //冒泡排序
         BubbleSorting.sort(sortTempNums);
 
-        for (int num : sortTempNums) {
-            System.out.print(num + ", ");
-        }
+        SelectionSorting.sort(sortTempNums);
     }
 }
