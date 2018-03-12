@@ -19,6 +19,15 @@ public class SelectionSorting {
      * @param numbers 排序数组
      */
     public static void sort(int[] numbers) {
+        //判断是否是空数组
+        if (numbers == null || numbers.length == 0) {
+            return;
+        }
+        //判断是否是单元素数组
+        if (numbers.length == 1) {
+            return;
+        }
+
         int length = numbers.length;
         for (int i = 0; i < length - 1; i++) {
             //选取最小值

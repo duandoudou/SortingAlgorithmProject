@@ -17,8 +17,10 @@ public class Test {
         int[] sortTempNums = new int[]{36, 44, 2, 17, 24, 30, 31, 44, 21, 22, 31, 37, 45, 2, 37, 11, 13, 12, 47};
 
         //冒泡排序
-        BubbleSorting.sort(sortTempNums);
+        //BubbleSorting.sort(sortTempNums);
 
-        SelectionSorting.sort(sortTempNums);
+        //SelectionSorting.sort(sortTempNums);
+
+        InsertionSorting.sort(sortTempNums);
     }
 }
